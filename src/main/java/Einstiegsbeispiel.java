@@ -1,11 +1,18 @@
 public class Einstiegsbeispiel {
 
-    public int getInnerProdukt (int [] a, int [] b){
-        int ergebnis= 0;
+    public int getInnerProdukt(int[] a, int[] b) {
+        int ergebnis = 0;
 
-        for (int i = 0; i< a.length; i++){
-            ergebnis= ergebnis + a[i]*b[i];
+        if (a == null || b == null) {
+            throw new IllegalArgumentException("Array is empty");
         }
-        return ergebnis;
+        if (a.length != b.length) {
+            throw new IllegalArgumentException("Array a is not the same length as b");
+        } else {
+            for (int i = 0; i < a.length; i++) {
+                ergebnis = ergebnis + a[i] * b[i];
+            }
+            return ergebnis;
+        }
     }
 }

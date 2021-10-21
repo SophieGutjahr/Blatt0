@@ -19,7 +19,9 @@ public class EinstiegsbeispielTest {
     public void ErgebnisRichtig2(){
         int [] c= {1,1,1,1};
         int [] d = {3,3,3,3};
-        
+        assertEquals(12,skalarproduct.getInnerProdukt(c,d));
     }
+    @Test
+    
 
 }
