@@ -1,3 +1,6 @@
+
+//Anna Sophie Gutjahr
+//11736254
 public class Einstiegsbeispiel {
 
     public int getInnerProdukt(int[] a, int[] b) {
